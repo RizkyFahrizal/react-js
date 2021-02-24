@@ -7,7 +7,7 @@ import Tabel from "./Tabel";
         [
             {
                 idmenu:10,
-                idkategori:33,
+                idkategori:1,
                 menu:"jeruk manis",
                 gambar:"jeruk.jpg",
                 harga:5000
@@ -52,6 +52,7 @@ import Tabel from "./Tabel";
       return (
         <div className="App">
 <Tabel menu={menus} title={title}/>
+<Tabel menu={menus.filter((data)=> (data.idkategori===1))} title="Menu Buah"/>
         </div>
       );
     }
